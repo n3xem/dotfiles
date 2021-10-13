@@ -1,0 +1,12 @@
+[alias]
+  st = status
+  br = branch
+  com = commit
+  co = checkout
+  dif = diff
+  l = log
+[url "github:"]
+  InsteadOf = https://github.com/
+  InsteadOf = git@github.com:
+[include]
+  path = ~/.gitinclude
