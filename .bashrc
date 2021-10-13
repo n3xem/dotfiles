@@ -1,15 +1,3 @@
-alias ls='exa'
-alias ll='ls -l'
-alias la='ls -a'
-alias lla='ls -la'
-alias bat='batcat'
-alias g='git'
-alias venv='source venv/bin/activate'
-alias aslroff='sysctl -w kernel.randomize_va_space=0'
-alias aslron='sysctl -w kernel.randomize_va_space=2'
-alias sudo='sudo '
-alias clip='win32yank.exe'
-
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:/usr/local/win32yank"
 export PYENV_ROOT="$HOME/.pyenv"
@@ -33,8 +21,10 @@ function peco-cd {
   cd "$( ghq list --full-path | peco)"
 }
 
-alias sd='peco-cd'
-
 . "$HOME/.cargo/env"
 export PATH=$PATH:'/mnt/c/Users/Yukyan.000/AppData/Local/Programs/Microsoft VS Code/bin'
 eval "$(starship init bash)"
+
+if [ -f ~/.bash_aliases ]; then
+. ~/.bash_aliases
+fi
