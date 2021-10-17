@@ -1,5 +1,5 @@
-alias ls='exa'
-alias l='exa'
+alias ls='exa -F'
+alias l='exa -F'
 alias ll='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
