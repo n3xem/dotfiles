@@ -13,3 +13,5 @@ alias aslron='sysctl -w kernel.randomize_va_space=2'
 alias sudo='sudo '
 alias clip='win32yank.exe'
 alias sd='peco-cd'
+alias update='sudo -- sh -c "apt update && apt upgrade"'
+
