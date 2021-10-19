@@ -11,7 +11,11 @@
 エイリアスはこのファイルに書く。
 
 ### .vimrc
-ここに.vimrcのセットアップに関する説明を書く。
+#### Vundleのインストール
+下記を実行する。
+```bash
+$ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
 
 ### .gitconfig
 `[user]` や `[ghq]` などの、使うユーザによって設定が変わる部分は、`~/.gitinclude` に記述する。
