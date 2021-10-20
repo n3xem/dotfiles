@@ -27,7 +27,7 @@ function peco-cd {
 
 . "$HOME/.cargo/env"
 
-export PATH=$PATH:'/mnt/c/Users/Yukyan.000/AppData/Local/Programs/Microsoft VS Code/bin'
+. ~/.bash_private
 
 eval "$(starship init bash)"
 
