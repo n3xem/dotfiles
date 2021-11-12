@@ -8,6 +8,9 @@ Plugin 'VundleVim/Vundle.vim'
 " 導入したいプラグインを以下に列挙
 " Plugin '[Github Author]/[Github repo]' の形式で記入
 Plugin 'airblade/vim-gitgutter'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'ryanoasis/vim-devicons'
 
 call vundle#end()
 filetype plugin indent on
@@ -82,3 +85,6 @@ let g:ale_fixers = {
       \ }
 let g:ale_fix_on_save = 1
 let g:ale_javascript_prettier_use_local_config = 1
+let g:airline#extensions#tabline#enabled = 1 " タブラインを表示
+let g:airline_powerline_fonts = 1            " Powerline Fontsを利用
+
