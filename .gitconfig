@@ -10,6 +10,7 @@
   h = help
   gr = grep
   pul = pull
+  sw = switch
 [url "github:"]
   InsteadOf = https://github.com/
   InsteadOf = git@github.com:
