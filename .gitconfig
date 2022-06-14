@@ -1,12 +1,24 @@
 [alias]
+  a = add
+  acm = !git add -A && git commit
   st = status
   br = branch
-  com = commit
+  cm = commit
   co = checkout
-  dif = diff
+  df = diff
   l = log
+  h = help
+  gr = grep
+  pul = pull
 [url "github:"]
   InsteadOf = https://github.com/
   InsteadOf = git@github.com:
 [include]
   path = ~/.gitinclude
+[core]
+  pager = delta 
+[delta]
+  plus-style = "syntax #0A7D06"
+  line-numbers = true
+[interactive]
+  diffFilter = delta --color-only
