@@ -30,16 +30,12 @@ if [ -f ~/.zsh_aliases ]; then
 . ~/.zsh_aliases
 fi
 
-fpath=(~/.zsh/completion $fpath)
-
-autoload -U compinit
-compinit -u
-
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
   source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
   autoload -Uz compinit && compinit
 fi
+
 export TERM=xterm-256color
 eval "$(nodenv init -)"
 eval "$(zoxide init zsh)"

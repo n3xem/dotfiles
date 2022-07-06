@@ -11,4 +11,5 @@ alias sudo='sudo '
 alias sd='peco-cd'
 alias ra='rails'
 alias gr='grep'
+alias d='docker'
 
