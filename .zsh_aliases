@@ -12,4 +12,5 @@ alias sd='peco-cd'
 alias ra='rails'
 alias gr='grep'
 alias d='docker'
+alias dc='docker compose'
 
