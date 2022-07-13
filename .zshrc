@@ -40,3 +40,4 @@ export TERM=xterm-256color
 eval "$(nodenv init -)"
 eval "$(zoxide init zsh)"
 
+source /opt/homebrew/share/zsh-abbr/zsh-abbr.zsh
