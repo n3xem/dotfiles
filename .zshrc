@@ -25,9 +25,14 @@ function peco-cd {
 . ~/.zsh_private
 
 eval "$(starship init zsh)"
+source /opt/homebrew/share/zsh-abbr/zsh-abbr.zsh
 
 if [ -f ~/.zsh_aliases ]; then
 . ~/.zsh_aliases
+fi
+
+if [ -f ~/.zsh_abbrs ]; then
+. ~/.zsh_abbrs 1> /dev/null
 fi
 
 if type brew &>/dev/null; then
@@ -40,4 +45,3 @@ export TERM=xterm-256color
 eval "$(nodenv init -)"
 eval "$(zoxide init zsh)"
 
-source /opt/homebrew/share/zsh-abbr/zsh-abbr.zsh

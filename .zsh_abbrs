@@ -1,0 +1,15 @@
+abbr -S l='exa -F'
+abbr -S ll='exa -Fl'
+abbr -S la='exa -Fa'
+abbr -S lla='exa -Fla'
+abbr -S v='vim'
+abbr -S g='git'
+abbr -S b='bat'
+abbr -S venv='source venv/bin/activate'
+abbr -S ra='rails'
+abbr -S gr='grep'
+abbr -S k='kubectl'
+
+# docker
+abbr -S d='docker'
+abbr -S dcd='docker compose -d'

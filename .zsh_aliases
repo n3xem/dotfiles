@@ -1,17 +1,4 @@
 alias ls='exa -F'
-alias l='exa -F'
-alias ll='ls -l'
-alias la='ls -a'
-alias lla='ls -la'
-alias v='vim'
-alias g='git'
-alias b='bat'
 alias venv='source venv/bin/activate'
-alias sudo='sudo '
 alias sd='peco-cd'
-alias ra='rails'
-alias gr='grep'
 
-# docker
-alias d='docker'
-alias dc='docker compose'
