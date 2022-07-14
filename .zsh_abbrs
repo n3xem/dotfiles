@@ -9,6 +9,7 @@ abbr -S venv='source venv/bin/activate'
 abbr -S ra='rails'
 abbr -S gr='grep'
 abbr -S k='kubectl'
+abbr -S t='tmux'
 
 # docker
 abbr -S d='docker'
