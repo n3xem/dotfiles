@@ -14,3 +14,16 @@ abbr -S t='tmux'
 # docker
 abbr -S d='docker'
 abbr -S dcd='docker compose -d'
+
+# git
+abbr -S ga='git add'
+abbr -S gacm='!git add -A && git commit'
+abbr -S gst='git status'
+abbr -S gbr='git branch'
+abbr -S gcm='git commit'
+abbr -S gco='git checkout'
+abbr -S gdf='git diff'
+abbr -S gl='git log'
+abbr -S ggr='git grep'
+abbr -S gpul='git pull'
+abbr -S gsw='git switch'
