@@ -13,6 +13,9 @@ abbr -S t='tmux'
 
 # docker
 abbr -S d='docker'
+abbr -S dps='docker container ls'
+abbr -S dimgs='docker image ls'
+abbr -S drun='docker container run'
 abbr -S dcd='docker compose -d'
 
 # git
