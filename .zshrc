@@ -12,6 +12,9 @@ export PATH="/usr/local/go/bin:$PATH"
 export GOPATH="$HOME/go"
 export PATH="$GOPATH/bin:$PATH"
 
+# flutter
+export PATH="$PATH:$HOME/development/flutter/bin"
+
 export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0.0
 
 source "$HOME/.cargo/env"
