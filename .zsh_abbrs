@@ -10,6 +10,7 @@ abbr -S ra='rails'
 abbr -S gr='grep'
 abbr -S k='kubectl'
 abbr -S t='tmux'
+abbr -S mk='make'
 
 # docker
 abbr -S d='docker'
@@ -17,6 +18,16 @@ abbr -S dps='docker container ls'
 abbr -S dimgs='docker image ls'
 abbr -S drun='docker container run'
 abbr -S dcd='docker compose -d'
+
+# docker-compose
+# abbr -S dc='docker compose' dcというコマンドが既にあり設定できない
+abbr -S dcom='docker compose'
+abbr -S dcec='docker compose exec'
+abbr -S dcup='docker compose up'
+abbr -S dcdn='docker compose down'
+abbr -S dcrm='docker compose rm'
+abbr -S dcrn='docker compose run'
+abbr -S dcps='docker compose ps'
 
 # git
 abbr -S ga='git add'
@@ -32,3 +43,5 @@ abbr -S gul='git pull'
 abbr -S gsw='git switch'
 abbr -S gush='git push'
 abbr -S gget='ghq get'
+abbr -S gestr='git restore'
+abbr -S gcmpr='gh pr list --state all --web --search'

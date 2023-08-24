@@ -1,4 +1,8 @@
-export PATH="$PATH:/opt/homebrew/bin" 
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
+
+export PATH="/opt/homebrew/bin:$PATH"
+export PATH="$PATH:/opt/homebrew/sbin" 
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
@@ -21,11 +25,21 @@ source "$HOME/.cargo/env"
 
 function peco-cd {
   cd "$( ghq list --full-path | peco)"
+  zle accept-line
 }
+
+function peco-run-docker-images {
+  local imgid=$(docker images | peco | awk "{print \$3}")
+  cmd="docker run -it $imgid"
+  echo ${cmd}
+  eval ${cmd}
+}
+
+zle -N peco-cd
+bindkey '^o' peco-cd
 
 . "$HOME/.cargo/env"
 
-. ~/.zsh_private
 
 eval "$(starship init zsh)"
 source /opt/homebrew/share/zsh-abbr/zsh-abbr.zsh
@@ -48,3 +62,17 @@ export TERM=xterm-256color
 eval "$(nodenv init -)"
 eval "$(zoxide init zsh)"
 
+export PATH="$HOME/.embulk/bin:$PATH"
+export PATH="$PATH:$(go env GOPATH)/bin"
+
+eval "$(anyenv init -)"
+
+eval "$(direnv hook zsh)"
+
+# anyenv
+eval "$(anyenv init -)"
+
+. ~/.zsh_private
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"

@@ -11,6 +11,8 @@
   gr = grep
   pul = pull
   sw = switch
+  blamepr = "!f() { gh pr view -w `git log --merges --oneline --reverse --ancestry-path $1...master | grep 'Merge pull request #' | head -n 1 | cut -f5 -d' ' | sed -e 's%#%%'`; }; f"
+
 [url "github:"]
   InsteadOf = https://github.com/
   InsteadOf = git@github.com:

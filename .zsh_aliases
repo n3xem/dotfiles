@@ -1,4 +1,4 @@
 alias ls='exa -F'
 alias venv='source venv/bin/activate'
 alias sd='peco-cd'
-
+alias dr='peco-run-docker-images'
