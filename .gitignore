@@ -1,3 +1,4 @@
 .bash_private
 .zsh_private
 .gitinclude
+.private_scripts/
