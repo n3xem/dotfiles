@@ -1,6 +1,5 @@
 # Fig pre block. Keep at the top of this file.
 [[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
-
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="$PATH:/opt/homebrew/sbin" 
 export PYENV_ROOT="$HOME/.pyenv"
@@ -38,6 +37,10 @@ function peco-run-docker-images {
 zle -N peco-cd
 bindkey '^o' peco-cd
 
+autoload -Uz edit-command-line
+zle -N edit-command-line
+bindkey '^xe' edit-command-line
+
 . "$HOME/.cargo/env"
 
 
@@ -73,6 +76,9 @@ eval "$(direnv hook zsh)"
 eval "$(anyenv init -)"
 
 . ~/.zsh_private
+
+export PATH="/opt/homebrew/opt/php@8.1/bin:$PATH"
+export PATH="/opt/homebrew/opt/php@8.1/sbin:$PATH"
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
