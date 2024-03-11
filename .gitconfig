@@ -25,3 +25,9 @@
   line-numbers = true
 [interactive]
   diffFilter = delta --color-only
+[filter "lfs"]
+	process = git-lfs filter-process --skip
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge --skip -- %f
+
