@@ -1,16 +1,19 @@
-abbr -S l='exa -F'
-abbr -S ll='exa -Fl'
-abbr -S la='exa -Fa'
-abbr -S lla='exa -Fla'
-abbr -S v='vim'
+abbr -S ls='eza -F'
+abbr -S l='eza -F'
+abbr -S ll='eza -Fl'
+abbr -S la='eza -Fa'
+abbr -S lla='eza -Fla'
+abbr -S v='nvim'
 abbr -S g='git'
 abbr -S b='bat'
 abbr -S venv='source venv/bin/activate'
 abbr -S ra='rails'
 abbr -S gr='grep'
-abbr -S k='kubectl'
 abbr -S t='tmux'
 abbr -S mk='make'
+abbr -S sug='gh copilot suggest'
+abbr -S cs='colima start --cpu 4 --memory 16 --dns 1.1.1.1 --dns 8.8.8.8 --vm-type vz --mount-type virtiofs'
+abbr -S cur='cursor .'
 
 # docker
 abbr -S d='docker'
@@ -19,15 +22,18 @@ abbr -S dimgs='docker image ls'
 abbr -S drun='docker container run'
 abbr -S dcd='docker compose -d'
 
-# docker-compose
+# docker compose
 # abbr -S dc='docker compose' dcというコマンドが既にあり設定できない
 abbr -S dcom='docker compose'
 abbr -S dcec='docker compose exec'
 abbr -S dcup='docker compose up'
 abbr -S dcdn='docker compose down'
+abbr -S dcdnv='docker compose down --volumes'
 abbr -S dcrm='docker compose rm'
 abbr -S dcrn='docker compose run'
 abbr -S dcps='docker compose ps'
+abbr -S dcre='docker compose restart'
+abbr -S dclg='docker compose logs'
 
 # git
 abbr -S ga='git add'
@@ -45,3 +51,20 @@ abbr -S gush='git push'
 abbr -S gget='ghq get'
 abbr -S gestr='git restore'
 abbr -S gcmpr='gh pr list --state all --web --search'
+abbr -S cdr='cd $(git rev-parse --show-toplevel)'
+abbr -S fj='cd $(fd . --type d | fzf)'
+
+# gh
+abbr -S approve='gh pr review --approve'
+abbr -S we='cd $(gh otui)'
+
+# k8s
+abbr -S k='kubectl'
+abbr -S kc='kubectl config'
+abbr -S kcg='kubectl config get-contexts'
+abbr -S kccc='kubectl config current-context'
+abbr -S kcu='kubectl config use-context'
+abbr -S kx='kubectx'
+
+# curl
+abbr -S ip='curl httpbin.org/ip'
