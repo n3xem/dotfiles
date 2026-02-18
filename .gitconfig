@@ -19,7 +19,8 @@
 [include]
   path = ~/.gitinclude
 [core]
-  pager = delta 
+  pager = delta
+	excludesFile = /Users/yukyan/.config/git/ignore
 [delta]
   plus-style = "syntax #0A7D06"
   line-numbers = true
@@ -31,3 +32,7 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge --skip -- %f
 
+[ghq]
+	root = ~/ghq
+[init]
+	defaultBranch = main
